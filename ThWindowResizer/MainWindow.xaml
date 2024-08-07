@@ -1,0 +1,22 @@
+﻿<Window x:Class="ThWindowResizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThWindowResizer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="223" Width="269" ResizeMode="CanMinimize">
+    <Grid>
+        <Button x:Name="SearchGameProcessButton"
+            Content="ゲームプロセスの検索" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Margin="10,10,0,0" Click="SearchGameProcessButtonClick"/>
+        <ComboBox x:Name="ResizerTypeComboBox"
+            HorizontalAlignment="Left" Margin="105,78,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="FrameResizer"/>
+            <ComboBoxItem Content="DirectResizer"/>
+        </ComboBox>
+        <Label Content="リサイザーの種類:" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="StartWindowResizerButton"
+            Content="リサイザーを起動する" HorizontalAlignment="Center" Width="162" Margin="0,0,0,10" Height="38" VerticalAlignment="Bottom" Click="StartWindowResizerButtonClick"/>
+
+    </Grid>
+</Window>

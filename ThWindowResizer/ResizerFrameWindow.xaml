@@ -1,0 +1,21 @@
+﻿<Window x:Class="ThWindowResizer.ResizerFrameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThWindowResizer"
+        mc:Ignorable="d"
+        Title="ResizerFrameDialog" Height="407" Width="542" WindowStyle="None"
+        Background="Transparent" AllowsTransparency="True" ResizeMode="CanResizeWithGrip">
+    <Grid>
+        <TextBlock TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="#FF7100FF" Height="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,18,0,0" TextWrapping="Wrap" Text="" Background="#FF7100FF" Width="18"/>
+        <TextBlock Margin="18,0,0,0" TextWrapping="Wrap" Text="" Background="#FF7100FF" VerticalAlignment="Bottom" Height="18"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,18,0,18" TextWrapping="Wrap" Text="" Background="#FF7100FF" Width="18"/>
+        <Button x:Name="ResizeButton"
+            Content="リサイズ(_R)" HorizontalAlignment="Right" Margin="0,0,56,0" VerticalAlignment="Bottom" Height="18" Click="ResizeButtonClick"/>
+        <Button x:Name="CloseButton"
+            Content="閉じる(_C)" HorizontalAlignment="Right" VerticalAlignment="Top" Height="18" Click="CloseButtonClick"/>
+
+    </Grid>
+</Window>
