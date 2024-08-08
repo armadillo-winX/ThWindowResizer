@@ -16,6 +16,8 @@
             Content="リサイズ(_R)" HorizontalAlignment="Right" Margin="0,0,56,0" VerticalAlignment="Bottom" Height="18" Click="ResizeButtonClick"/>
         <Button x:Name="CloseButton"
             Content="閉じる(_C)" HorizontalAlignment="Right" VerticalAlignment="Top" Height="18" Click="CloseButtonClick"/>
+        <CheckBox x:Name="FixAspectRateCheckBox"
+            Content="縦横比を4:3に固定する" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Bottom" Foreground="White" Click="FixAspectRateCheckBoxClick"/>
 
     </Grid>
 </Window>

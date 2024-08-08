@@ -93,5 +93,13 @@ namespace ThWindowResizer
         {
             this.Close();
         }
+
+        private void FixAspectRateCheckBoxClick(object sender, RoutedEventArgs e)
+        {
+            if (FixAspectRateCheckBox.IsChecked == true)
+            {
+                this.Height = this.Width * 0.75;
+            }
+        }
     }
 }
