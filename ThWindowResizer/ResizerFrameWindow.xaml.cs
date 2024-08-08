@@ -47,6 +47,8 @@ namespace ThWindowResizer
         public ResizerFrameWindow()
         {
             InitializeComponent();
+
+            FixAspectRateCheckBox.IsChecked = true;
         }
 
         private void SetFramePosition(Process gameProcess)
