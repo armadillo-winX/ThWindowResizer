@@ -101,5 +101,13 @@ namespace ThWindowResizer
                 this.Height = this.Width * 0.75;
             }
         }
+
+        private void WindowSizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (FixAspectRateCheckBox.IsChecked == true)
+            {
+                this.Height = this.Width * 0.75;
+            }
+        }
     }
 }

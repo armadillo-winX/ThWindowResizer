@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ThWindowResizer"
         mc:Ignorable="d"
         Title="ResizerFrameDialog" Height="407" Width="542" WindowStyle="None"
-        Background="Transparent" AllowsTransparency="True" ResizeMode="CanResizeWithGrip">
+        Background="Transparent" AllowsTransparency="True" ResizeMode="CanResizeWithGrip" SizeChanged="WindowSizeChanged">
     <Grid>
         <TextBlock TextWrapping="Wrap" Text="" VerticalAlignment="Top" Background="#FF7100FF" Height="18"/>
         <TextBlock HorizontalAlignment="Left" Margin="0,18,0,0" TextWrapping="Wrap" Text="" Background="#FF7100FF" Width="18"/>
