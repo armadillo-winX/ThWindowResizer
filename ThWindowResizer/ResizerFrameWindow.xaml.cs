@@ -98,7 +98,7 @@ namespace ThWindowResizer
         {
             if (FixAspectRateCheckBox.IsChecked == true)
             {
-                this.Height = this.Width * 0.75;
+                this.Height = this.Width * 0.8;
             }
         }
 
@@ -106,7 +106,7 @@ namespace ThWindowResizer
         {
             if (FixAspectRateCheckBox.IsChecked == true)
             {
-                this.Height = this.Width * 0.75;
+                this.Height = this.Width * 0.8;
             }
         }
     }
