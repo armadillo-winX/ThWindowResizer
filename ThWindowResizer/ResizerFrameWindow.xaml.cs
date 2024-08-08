@@ -10,6 +10,8 @@ namespace ThWindowResizer
     /// </summary>
     public partial class ResizerFrameWindow : Window
     {
+        private double _aspectRate;
+
         private Process? _gameProcess;
 
         public Process? GameProcess
@@ -98,7 +100,7 @@ namespace ThWindowResizer
         {
             if (FixAspectRateCheckBox.IsChecked == true)
             {
-                this.Height = this.Width * 0.8;
+                _aspectRate = this.Height / this.Width;
             }
         }
 
@@ -106,7 +108,7 @@ namespace ThWindowResizer
         {
             if (FixAspectRateCheckBox.IsChecked == true)
             {
-                this.Height = this.Width * 0.8;
+                this.Height = this.Width * _aspectRate;
             }
         }
     }
