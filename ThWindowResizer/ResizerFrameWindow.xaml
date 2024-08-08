@@ -17,7 +17,7 @@
         <Button x:Name="CloseButton"
             Content="閉じる(_C)" HorizontalAlignment="Right" VerticalAlignment="Top" Height="18" Click="CloseButtonClick"/>
         <CheckBox x:Name="FixAspectRateCheckBox"
-            Content="縦横比を既定値で固定" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Bottom" Foreground="White" Click="FixAspectRateCheckBoxClick"/>
+            Content="縦横比を固定" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Bottom" Foreground="White" Click="FixAspectRateCheckBoxClick"/>
 
     </Grid>
 </Window>
